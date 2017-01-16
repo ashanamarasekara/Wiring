@@ -192,7 +192,9 @@ class MenuItem
     /*
     || @description
     || | Get the item 'back' of this item (historical back)
-    || #
+   void toRoot() {
+      setCurrent( &getRoot() );
+   }
     ||
     || @return the item back from this
     */
